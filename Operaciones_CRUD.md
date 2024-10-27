@@ -74,12 +74,13 @@ SELECT *FROM Usuarios WHERE LENGTH(password)>=9;
   
   ```sql
   SELECT email From usuario WHERE LENGTH(password)>8;
-  
+  ```
   
   SELECT *FROM usuario WHERE (id_usuario%2) = 0;
+  
                               MOD(id_usuario, 2) = 0;
-  ```
 
+```
 ## Update - Actualizar
 
 La operacion *actualizar* se utiliza para modificar registros en la Base de Datos. Esto se hace con la sentencia `UPDATE`
@@ -105,7 +106,6 @@ UPDATE usuarios SET email="ejemplo@gmail.com" WHERE id_usuario=1)
                 SET email = "123" WHERE (id_usuario=1)
                 SET email = "1234" WHERE (id_usuario=1)
                 SET email = "12345678910111213" WHERE (id_usuario=1)
-
 ```
 
 # 
@@ -122,9 +122,6 @@ DELATE FROM usuarios WHERE id_usuario=4;
 DELATE FROM usuarios WHERE email="lucionhdz3012@gmail.com";
 ```
 
-
-
-
 ### Ejercicios
 
 - Eliminar usuarios cuyo email contenga uno o mas "5"".
@@ -134,8 +131,6 @@ DELATE FROM usuarios WHERE email="lucionhdz3012@gmail.com";
 - Eliminar usuarios con contraseñas que contengan solo números (expresion regular).
 
 - Eliminar usuarios con correos que no tengan el dominio gmail.
-
-
 
 ```sql
 1-
